@@ -1,0 +1,156 @@
+/* Signup.css */
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f5f2;
+  padding: 2rem;
+}
+
+.signup-container {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  margin-top: 80px;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.signup-logo {
+  font-size: 2.5rem;
+  color: #d3935c;
+  margin-bottom: 1rem;
+}
+
+.signup-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 0.5rem;
+}
+
+.signup-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.form-input {
+  padding: 1rem;
+  border: 1px solid #e0d6cc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #d3935c;
+  box-shadow: 0 0 0 2px rgba(211, 147, 92, 0.2);
+}
+
+.password-hint {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.25rem;
+}
+
+.signup-button {
+  padding: 1rem;
+  background-color: #d3935c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.signup-button:hover {
+  background-color: #c08452;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 147, 92, 0.3);
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.login-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.login-link {
+  color: #d3935c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.terms-text {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.terms-link {
+  color: #666;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 2rem;
+  }
+  
+  .signup-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-page {
+    padding: 1rem;
+  }
+  
+  .signup-container {
+    padding: 1.5rem;
+    margin-top: 60px;
+  }
+}

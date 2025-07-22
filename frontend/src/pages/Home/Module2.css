@@ -1,0 +1,135 @@
+/* Module2.css */
+.m2-container {
+    background-color: #ffffff;
+    padding: 8rem 2rem;
+    height: 700px;
+   
+}
+
+.m2-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.m2-text-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.m2-section-label {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    color: #D3935C;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    display: block;
+}
+
+.m2-main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+.m2-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.m2-services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.m2-service-item {
+    background: #fafafa;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid #f0f0f0;
+}
+
+.m2-service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-color: rgba(211, 147, 92, 0.3);
+}
+
+.m2-icon-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.m2-service-icon {
+    font-size: 2.5rem;
+    color: #D3935C;
+}
+
+.m2-service-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.m2-service-description {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .m2-container {
+        padding: 6rem 2rem;
+        height: max-content;
+    }
+    
+    .m2-main-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .m2-content-wrapper {
+        gap: 3rem;
+    }
+    
+    .m2-services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .m2-container {
+        padding: 4rem 1.5rem;
+         height: max-content;
+    }
+    
+    .m2-main-heading {
+        font-size: 1.75rem;
+    }
+    
+    .m2-description {
+        font-size: 1rem;
+    }
+    
+    .m2-services-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .m2-service-item {
+        padding: 2rem 1.5rem;
+    }
+}

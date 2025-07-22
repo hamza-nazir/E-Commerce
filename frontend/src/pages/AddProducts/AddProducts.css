@@ -1,0 +1,102 @@
+.ap-form-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ap-form-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.ap-form label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #444;
+}
+
+.ap-form input,
+.ap-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.ap-form textarea {
+  resize: vertical;
+}
+
+.ap-form input:focus,
+.ap-form textarea:focus {
+  border-color: #D4A373;
+  outline: none;
+}
+
+.ap-form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ap-form-group {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ap-form-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.ap-sizes-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.ap-size-option {
+  background: #f3f3f3;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ap-submit-btn {
+  background-color: #D4A373;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.ap-submit-btn:hover {
+  background-color: #bd8c60;
+}
+.ap-parent{
+
+    margin-top: 100px;
+}

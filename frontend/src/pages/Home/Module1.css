@@ -1,0 +1,123 @@
+.m1-hero-section {
+    height: 80vh;
+    min-height: 100vh;
+    background-image: url('/images/m1-hero-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.m1-hero-overlay {
+  
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+body::selection {
+  background: #D4A373;   /* background of highlighted text */
+  color: white;        /* text color of highlighted text */
+}
+
+.m1-hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+    color: white;
+}
+
+.m1-subheading {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+.m1-main-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.m1-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.m1-cta-button {
+    padding: 1rem 2.5rem;
+    background-color: #d3935c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.m1-cta-button:hover {
+    background-color: #c08452;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .m1-main-heading {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .m1-hero-section {
+        height: 80vh;
+        min-height: 600px;
+    }
+    
+    .m1-main-heading {
+        font-size: 2.5rem;
+    }
+    
+    .m1-description {
+        font-size: 1rem;
+    }
+    
+    .m1-subheading {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .m1-main-heading {
+        font-size: 2rem;
+    }
+    
+    .m1-hero-content {
+        text-align: center;
+    }
+    
+    .m1-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
